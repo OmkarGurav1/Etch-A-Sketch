@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <meta charset = "UTF-8">
+        <title>
+            Etch-A-Sketch
+        </title>
+    </head>
+    <body>
+        <div class="main_content">
+            <h1>Etch a <em>Sketch</em></h1>
+            <div class="range">
+                <label for="Grid-size">Choose a size</label>
+                <input type="range" id="grid-select" name="Grid-size" min="0" max="100">
+            </div>
+            <div class="playground">
+                <div class="options">
+                    <button type="button" value="black" class="color">Black</button>
+                    <button type="button" value="rainbow" class="color">Rainbow</button>
+                    <button type="button" value="erase" class="color">Erase</button>
+                    <button type="button" value="darken" class="color">Darken</button>
+                </div>
+                <div class="container">
+                </div>
+            </div>
+            <script src="Etch-A-Sketch.js">
+            </script>
+        </div>
+        <!-- <button id="btn" style="margin:10px">Create Div</button> -->
+         <button id="grid-button">New Grid</button>
+         <div id="grid-container"></div>
+    </body>
+</html>
