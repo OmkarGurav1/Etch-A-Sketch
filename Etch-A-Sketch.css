@@ -1,0 +1,55 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Chivo Mono';
+    background-color: red;
+}
+/*
+.rowcontainer{
+    width: 100%;
+    height: 30px;
+}
+
+.name{
+    line-height: 30px;
+    float: left;
+    width: 60%;
+    height: 100%;
+    padding-left: 15px
+}
+*/
+button{
+    background-color: aqua;
+    height: 100px;
+    width: 30px;
+}
+
+.grid-item {
+    height: 30px;
+    width: 30px;
+    border: 1px solid #ddd;
+    text-align: center;
+    transition: ease 3s all;
+}
+
+.grid-item:hover {
+    background-color: blue;
+    transition: ease 0.1s all;
+}
+
+.container {
+    width: 50%;
+    height: 80%;
+    display: grid;
+    margin: 0;
+}
+
+.body{
+    margin: 0;
+    text-align: center;
+}
+
+.main_content {
+    margin: 0 auto;
+    padding: 2.5 rem;
+    width: 100%;
+}
