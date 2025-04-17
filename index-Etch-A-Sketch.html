@@ -2,6 +2,7 @@
 <html lang ="en">
     <head>
         <meta charset = "UTF-8">
+        <link rel="stylesheet" href="Etch-A-Sketch.css">
         <title>
             Etch-A-Sketch
         </title>
@@ -9,24 +10,30 @@
     <body>
         <div class="main_content">
             <h1>Etch a <em>Sketch</em></h1>
-            <div class="range">
-                <label for="Grid-size">Choose a size</label>
-                <input type="range" id="grid-select" name="Grid-size" min="0" max="100">
-            </div>
-            <div class="playground">
+            <!-- <div class="playground">
                 <div class="options">
-                    <button type="button" value="black" class="color">Black</button>
+                    <button type="button" value="black" class="color">Color</button>
                     <button type="button" value="rainbow" class="color">Rainbow</button>
                     <button type="button" value="erase" class="color">Erase</button>
-                    <button type="button" value="darken" class="color">Darken</button>
+                    <button type="button" value="darken" class="color">Clear</button>
                 </div>
                 <div class="container">
                 </div>
+            </div> -->
+            <div class="bottom_container">
+                <div class="circle"></div>
+                    <input type="color" id="color-picker">
+                    <div class="setting" id="color-mode">Color Mode</div>
+                <div class="circle"></div>
+                <div class="setting" id="random-mode">Random Mode</div>
+                <div class="setting" id="progressive-darkening">Progressive Darkening</div>
+                <div class="setting" id="eraser">Eraser</div>
+                <div class="setting" id="clear-canvas">Clear</div>
             </div>
             <script src="Etch-A-Sketch.js">
             </script>
         </div>
-        <!-- <button id="btn" style="margin:10px">Create Div</button> -->
+        <!-- <div class="square"></div> -->
          <button id="grid-button">New Grid</button>
          <div id="grid-container"></div>
     </body>

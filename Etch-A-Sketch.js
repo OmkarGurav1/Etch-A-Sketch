@@ -1,38 +1,25 @@
+console.log("Hello from a large JS file!");
+
+function greetUser(name) {
+  alert(`Welcome, ${name}!`);
+}
+
+greetUser("Visitor");
+
 const container1 = document.querySelector(".container");
 const range = document.getElementById("grid-select");
 const buttons = document.getElementsByClassName("color"); 
 
-/*
-const btn = document.getElementById("btn");//getting user input for button
+// for (let i = 0; i < 256; i++) {
+//     let div = document.createElement("div");
+//     div.className = "gridItem";
+//     div.textContent = "This is a new div!";
+//     document.body.appendChild(div);
+// }
 
-btn.addEventListener("click", () => {//event will occur after clicking the button
-  
-    const div = document.createElement("div");//Create a new div
-    
-    div.id = "div_id" ;
-    div.className = "div_class";
-    div.style = "background-color: red;";//CSS
-    div.style.width = "100px";//CSS
-    div.style.height = "100px";//CSS
-    document.body.appendChild(div);  
-  //Above code is used to add a div to the page
-});
-*/
-
-
-for (let i = 0; i < 256; i++) {
-    let div = document.createElement("div");
-    div.className = "gridItem";
-    div.textContent = "This is a new div!";
-    document.body.appendChild(div);
-}
-
-let divs = document.getElementsByClassName("gridItem");//Grid item that was created dynamically
-
+let divs = document.getElementsByClassName("gridItem");//Grid item that was created dynamicallys
 const newGridButton = document.getElementById("newGridButton");//Get the element with the specified id
 const container = document.getElementById("gridContainer");//Get the element with the specified id
-
-// add(button);
 
 // function newGridButton(){
 //     gridButton = prompt("No. of squares per side for the new grid:");
@@ -56,7 +43,6 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 });
 
-
   function clearGrid() {
     const gridContainer = document.getElementById("grid-container");
     gridContainer.innerHTML = ""; // Remove all children
@@ -75,8 +61,4 @@ document.addEventListener("DOMContentLoaded", function() {
         gridContainer.appendChild(square);
       }
     }
-  }
-
-
-
-
+  } 
